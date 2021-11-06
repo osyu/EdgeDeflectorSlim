@@ -61,6 +61,7 @@ Section "Uninstall"
   DeleteRegKey HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\${NAME}"
 
   Delete "$INSTDIR\${NAME}.exe"
+  Delete "$INSTDIR\license.txt"
   Delete "$INSTDIR\uninst.exe"
   RMDir "$INSTDIR"
 SectionEnd
